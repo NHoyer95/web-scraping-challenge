@@ -92,7 +92,7 @@ def scrape():
     #Put scraped items into single dictionary
     mars_data = {
 
-        "article_title": news_title,
+        "news_title": news_title,
         "paragraph_text": paragraph_text,
         "featured_image": featured_image_url,
         "mars_facts": mars_html_table,
