@@ -10,7 +10,7 @@
 
     <body>
         <div class = "container">
-            <div class = "jumbotron hex-center">
+            <div class = "jumbotron text-center">
                 <h1>Mission to Mars</h1>
                 <p>
                     <a class = "btn btn-primary btn-lg" href = "/scrape" role = "button">Scrape Web Data</a>
@@ -19,25 +19,24 @@
         </div>
 
 
-        <!-- Mars News Section -->
+<!------------------------------------ Mars News Section ---------------------------------->
         <div class = "row">
             <div class = "col-md-12">
-                <h2>Mars News</h2>
+                <h2>Latest Mars News</h2>
                 <h4>{{mars.news_title}}</h4>
                 <p>{{mars.paragraph_text}}</p>
             </div>
         </div>
 
-        <!-- Mars Image and Table Section -->
+<!------------------------------- Mars Image and Table Section ----------------------------->
         <div class ="row">
             <div class = "col-md-8">
                 <h2>Featured Mars Image</h2>
-                <!-- Figure out image placement here -->
                 <img width="100%" src="{{mars.featured_image}}">
             </div>
             <div class = "col-md-4">
-                <h2>Mars Facts</h2>
-                {{mars.mars_facts | safe}}
+                    <h2>Mars Facts</h2>
+                    {{mars.mars_facts | safe}}
             </div>
         </div>
     </div>
@@ -51,28 +50,34 @@
     <br>
 
     <div class="row">
-        <div class="col-md-3" style= "border: solid; border-width: 1px; padding: 5px; width: 20%;">
-          <img width="100%" src="{{mars.hemisphere_image_url_1}}" alt= "Cerberus Hemisphere">
-          <h4 style= "text-align: center;">{{mars.hemisphere_image_title_1}}</h4>
-        </div>
+        <div class="mx-auto">
+            <div class="col-md-3" style= "border: solid; border-width: 3px; padding: 15px; width: 24%;">
+            <img width="100%" src="{{mars.hemisphere_image_url_1}}" class="img-fluid" alt= "Cerberus Hemisphere">
+            <h4 style= "text-align: center;">{{mars.hemisphere_image_title_1}}</h4>
+            </div>
 
-        <div class="col-md-3" style= "border: solid; border-width: 1px; padding: 5px; width: 20%;">
-          <img width="100%" src="{{mars.hemisphere_image_url_2}}" alt= "Schiaparelli Hemisphere">
-          <h4 style= "text-align: center;">{{mars.hemisphere_image_title_2}}</h4>  
-        </div>
-        
-        <div class="col-md-3" style= "border: solid; border-width: 1px; padding: 5px; width: 20%;">
-          <img width="100%" src="{{mars.hemisphere_image_url_3}}" alt= "Syrtis Major Hemisphere">
-          <h4 style= "text-align: center;">{{mars.hemisphere_image_title_3}}</h4>
-        </div>
+            <div class="col-md-3" style= "border: solid; border-width: 3px; padding: 15px; width: 24%;">
+            <img width="100%" src="{{mars.hemisphere_image_url_2}}" class="img-fluid" alt= "Schiaparelli Hemisphere">
+            <h4 style= "text-align: center;">{{mars.hemisphere_image_title_2}}</h4>  
+            </div>
+            
+            <div class="col-md-3" style= "border: solid; border-width: 3px; padding: 15px; width: 24%;">
+            <img width="100%" src="{{mars.hemisphere_image_url_3}}" class="img-fluid" alt= "Syrtis Major Hemisphere">
+            <h4 style= "text-align: center;">{{mars.hemisphere_image_title_3}}</h4>
+            </div>
 
-        <div class="col-md-3" style= "border: solid; border-width: 1px; padding: 5px; width: 20%;">
-          <img width="100%" src="{{mars.hemisphere_image_url_4}}" alt= "Valles Marineris Hemisphere">
-          <h4 style= "text-align: center;">{{mars.hemisphere_image_title_4}}</h4>
+            <div class="col-md-3" style= "border: solid; border-width: 3px; padding: 15px; width: 24%;">
+            <img width="100%" src="{{mars.hemisphere_image_url_4}}" class="img-fluid" alt= "Valles Marineris Hemisphere">
+            <h4 style= "text-align: center;">{{mars.hemisphere_image_title_4}}</h4>
+            </div>
         </div>
     </div>
-    <br>
-    </div>
-  
-    </body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+
+    
+</body>
 </html>
